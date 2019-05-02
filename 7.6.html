@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.6</title>
+    <script>
+        function sputa(x){
+
+            a = x.split('/');
+
+            y = Number (a[0]);
+            m = Number (a[1]);
+            d = Number (a[2]);
+
+            data = new Date();
+
+            data.setDate(d);
+            data.setMonth(m-1);
+            data.setFullYear(y);
+
+            natale = new Date(data.getFullYear(), 11, 25);
+
+            document.writeln("Il Magico Natale nel lontano "+y.value+" cadde di "+natale.getDay())
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Creare una pagina HTML con un form che permetta l’introduzione della data di nascita di un utente, nel formato gg/mm/aaaa
+         (es. 17/04/1968), e che indichi in output in quale giorno della settimana cadde il Natale in quell’anno. -->
+
+    <p>
+        Inserisci la tua data di nascita:
+    </p>
+
+    <form id="f1">
+        <input id="data" type="text" placeholder="gg/mm/aaaa"><button type="button" onclick="sputa('data')">OK</button>
+    </form>
+
+</body>
+</html>

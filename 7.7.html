@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.7</title>
+    <script>
+        function maggiore(){
+
+            max = 0;
+
+            for(i in arguments){
+                if(i>max)
+                    max = i;
+            }
+
+            return max;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Sviluppare una funzione Javascript chiamata “Maggiore” che accetti una quantità imprecisata di numeri come parametri e restituisca il maggiore di essi.
+    Memorizzare la funzione in un file “funzioni.js”.
+
+    Creare quindi una pagina HTML che richiami il file “funzioni.js” ed usi la funzione “Maggiore” per calcolare il massimo tra cinque numeri introdotti come campi distinti di un form.
+    Il valore del massimo deve essere mostrato in una finestra di pop-up attivata quando si preme un apposito bottone etichettato “Trova il massimo”.
+    Il form deve anche contenere un pulsante Cancella per eliminare il contenuto dei cinque campi di input.-->
+
+    <form id="f1" action="">
+        <input type="number" name="n1"><br>
+        <input type="number" name="n2"><br>
+        <input type="number" name="n3"><br>
+        <input type="number" name="n4"><br>
+        <input type="number" name="n5">
+    </form>
+
+    <button id="btn1" onclick="window.alert('Il numero più grande tra quelli inseriti è '+maggiore(n1.valueAsNumber, n2.valueAsNumber, n3.valueAsNumber, n4.valueAsNumber, n5.valueAsNumber))">OK</button>
+    <input type="button" onclick="">
+</body>
+</html>

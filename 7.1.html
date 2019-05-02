@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.1</title>
+    <script type="text/javascript">
+        function maiusc(x){
+            const m = document.getElementById(x).value;
+
+            if(m === "")
+                alert("Inserisci qualcosa per favore")
+            else
+                alert(m.toUpperCase())
+        }
+    </script>
+</head>
+<body>
+
+<!-- Creare una pagina HTML che contenga un campo di testo per l'inserimento di una stringa da parte dell'utente e quindi,
+        quando viene premuto un apposito pulsante, visualizzi in una finestra di pop-up la stringa introdotta convertita in maiuscolo. -->
+
+    <form name="f1" method="get">
+        <input id="str" type="text">
+        <input type="button" onclick="maiusc('str')">
+    </form>
+
+</body>
+</html>

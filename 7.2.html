@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.2</title>
+    <script type="text/javascript">
+        function changeColor(x){
+            const m = document.getElementById(x).value;
+
+            document.body.style.backgroundColor = x;
+        }
+    </script>
+</head>
+<body style="font-family: Avenir, sans-serif;">
+
+<!-- Realizzare una pagina HTML con un menù a scelta multipla mutuamente esclusiva, in cui a ciascuna scelta sia associato un colore
+ (rosso, verde, giallo, bianco). Effettuando una delle scelte disponibili, il colore di sfondo della pagina deve cambiare di conseguenza (es. diventare rosso). -->
+
+    <form>
+        <ul style="list-style: none">
+            <li>
+                <input name="radio" type="radio" id="red" onclick="changeColor('red')"><label for="red"> ROSSO</label>
+            </li>
+            <li>
+                <input name="radio" type="radio" id="white" onclick="changeColor('white')"><label for="white"> BIANCO</label>
+            </li>
+            <li>
+                <input name="radio" type="radio" id="green" onclick="changeColor('green')"><label for="green"> VERDE</label>
+            </li>
+            <li>
+                <input name="radio" type="radio" id="yellow" onclick="changeColor('yellow')"><label for="yellow"> GIALLO</label>
+            </li>
+
+        </ul>
+    </form>
+
+</body>
+</html>

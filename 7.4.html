@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.4</title>
+    <script>
+        function somma(a, b){
+            return a+b;
+        }
+    </script>
+</head>
+<body>
+
+<!-- Creare una pagina HTML con un form in grado di accettare due numeri naturali come input e quindi,
+       quando viene premuto un apposito pulsante, mostri in un campo di testo (non modificabile dall’utente) la somma dei due numeri. -->
+
+    <form>
+        <input type="number" name="a">
+        +
+        <input type="number" name="b">
+        <button onclick="document.writeln(a.valueAsNumber + b.valueAsNumber)">Somma</button>
+        =
+        <output name="x" for="a b">
+    </form>
+</body>
+</html>

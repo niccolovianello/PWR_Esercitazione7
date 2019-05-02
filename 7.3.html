@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 7.3</title>
+    <script type="text/javascript">
+        function changeColor(x){
+            document.body.style.backgroundColor = x;
+        }
+    </script>
+</head>
+<body>
+
+<!-- Modificare l’esercizio precedente, permettendo all’utente la scelta di un colore arbitrario per lo sfondo. -->
+
+<form>
+    <ul style="list-style: none">
+        <li>
+            <input name="radio" type="radio" id="red" onclick="changeColor('red')"><label for="red"> ROSSO</label>
+        </li>
+        <li>
+            <input name="radio" type="radio" id="white" onclick="changeColor('white')"><label for="white"> BIANCO</label>
+        </li>
+        <li>
+            <input name="radio" type="radio" id="green" onclick="changeColor('green')"><label for="green"> VERDE</label>
+        </li>
+        <li>
+            <input name="radio" type="radio" id="yellow" onclick="changeColor('yellow')"><label for="yellow"> GIALLO</label>
+        </li>
+        <li>
+            <input id="color" type="text">
+            <input type="button" onclick="changeColor(document.getElementById('color').value)">
+        </li>
+    </ul>
+</form>
+
+</body>
+</html>
